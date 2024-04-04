@@ -1,12 +1,20 @@
-// show  search and cart mega onclick
+// show  search and cart mega onclick and hide trigger and show close icon on mobile header
 const cartSearch = document.querySelector(".cart-search");
 const search = document.querySelector(".ri-search-line");
 const cart = document.querySelector(".ri-shopping-bag-line");
+const menuButton = document.querySelector(".cart-search .trigger");
+const closeIcon = document.querySelector(".cart-search .close");
 search.addEventListener("click", function () {
+  // show close icon when click on cart
+  closeIcon.classList.toggle("show-close");
+  cartSearch.classList.toggle("trigger-close");
   cartSearch.classList.toggle("show-search");
   cartSearch.classList.remove("show-cart");
 });
 cart.addEventListener("click", function () {
+  // show close icon when click on cart
+  closeIcon.classList.toggle("show-close");
+  cartSearch.classList.toggle("trigger-close");
   cartSearch.classList.toggle("show-cart");
   cartSearch.classList.remove("show-search");
 });
@@ -25,7 +33,7 @@ cartSearch.addEventListener("mouseleave", function () {
 });
 // copy navbar to mobile-header
 const navBar = document.querySelector("nav .navbar");
-const mobileHeader = document.querySelector("header .mobile-header");
+const mobileHeader = document.querySelector(".mobile-header");
 mobileHeader.innerHTML = navBar.innerHTML;
 // show on click mobile-header and close icon menu and show close
 document.addEventListener("DOMContentLoaded", function () {
@@ -41,16 +49,17 @@ document.addEventListener("DOMContentLoaded", function () {
     mobileHeader.classList.remove("show-header");
     closeIcon.classList.remove("show-close");
     menuButton.classList.remove("trigger-close");
+    cartSearch.classList.remove("show-cart");
+    cartSearch.classList.remove("show-search");
+    cartSearch.classList.remove("trigger-close");
   });
 });
 var mega = document.querySelectorAll(".has-child span");
 mega.forEach((menu) => menu.addEventListener("click", toggle));
-
 function toggle(e) {
   e.preventDefault();
   var parent = this.closest(".has-child");
   var isExpanded = parent.classList.contains("expand");
-
   // Close all other expanded items
   var expandedItems = document.querySelectorAll(".has-child.expand");
   expandedItems.forEach((item) => {
@@ -58,17 +67,15 @@ function toggle(e) {
       item.classList.remove("expand");
     }
   });
-
   // Toggle expand state for clicked item
   parent.classList.toggle("expand", !isExpanded);
 }
 
 //click on back-button close mega
 var backButton = document.querySelectorAll(".back-button");
-backButton.forEach(button => {
+backButton.forEach((button) => {
   button.addEventListener("click", function () {
     var parent = this.closest(".has-child");
     parent.classList.remove("expand");
   });
 });
-

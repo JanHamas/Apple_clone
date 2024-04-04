@@ -251,7 +251,6 @@ header li i {
     right: 0;
     padding: 4em 7em;
     line-height: 2em;
-    box-shadow: rgba(36, 35, 35, 0.2) 0 30px 20px -30px;
     background: white;
     transform: translateY(-100%);
     z-index: -1;
@@ -332,6 +331,12 @@ header li i {
 .cart-search .mega .sign-in a {
   color: rgb(98, 98, 195);
   text-decoration: underline;
+}
+.show-close.close {
+  display: none;
+}
+.cart-search.trigger-close .trigger {
+  display: none;
 }
 
 @media screen and (min-width: 1030px) {
