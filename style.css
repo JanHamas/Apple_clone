@@ -4,4 +4,61 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+.mobile-hide {
+  display: none;
+}
+.icon-small {
+  font-size: 1rem;
+}
+body {
+  background-color: rgb(247, 247, 247);
+  font-size: 11px;
+  color: white;
+}
+
+/* 1. Header  */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  background-color: rgb(24, 24, 24);
+}
+
+header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 42px;
+}
+header .navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+header .navbar li a {
+  color: white;
+}
+
+header .cart-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 42px;
+}
+
+@media screen and (min-width: 835px) {
+  .mobile-hide {
+    display: block;
+  }
+  .desktop-hide {
+    display: none;
+  }
+}
+@media screen and (min-width: 1030px) {
 }
