@@ -36,11 +36,13 @@ body {
 }
 /* Header */
 header {
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 10.5px 0;
   background-color: rgb(24, 24, 24);
+  z-index: 999;
 }
 header .wrapper {
   width: 97%;
@@ -83,8 +85,8 @@ header .cart-search {
     color: white;
     left: 0;
     right: 0;
-    z-index: 0;
     transform: translateY(-200%);
+
     background-color: rgb(24, 24, 24);
     transition: transform 0.4s;
   }
@@ -133,6 +135,19 @@ header .cart-search {
     font-size: 1.7em;
     background: none;
   }
+  input[type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+    -webkit-appearance: none;
+    height: 18px;
+    width: 18px;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='rgba(255,255,255,1)'%3E%3Cpath d='M11.9997 10.5865L16.9495 5.63672L18.3637 7.05093L13.4139 12.0007L18.3637 16.9504L16.9495 18.3646L11.9997 13.4149L7.04996 18.3646L5.63574 16.9504L10.5855 12.0007L5.63574 7.05093L7.04996 5.63672L11.9997 10.5865Z'%3E%3C/path%3E%3C/svg%3E");
+    border-radius: 50%;
+  }
+  input[type="search"]::-webkit-search-cancel-button:hover {
+    background-color: rgb(189, 189, 189);
+  }
+
   .cart-search .row h4 {
     font-size: 12px;
     display: flex;
@@ -160,7 +175,7 @@ header .cart-search {
     color: #8e8ef6;
   }
 }
-/* Additional Media Queries for Header Gap */
+/* Additional All Media Queries for Header Gap */
 @media screen and (min-width: 840px) {
   header .wrapper,
   header .navbar,
