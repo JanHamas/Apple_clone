@@ -60,6 +60,7 @@ header .navbar li a:hover {
 header .cart-search {
   gap: 30px;
 }
+
 @media screen and (min-width: 835px) {
   .icon-small {
     font-size: 1.5em;
@@ -78,6 +79,7 @@ header .cart-search {
   header .wrapper {
     justify-content: center;
   }
+  /* mega */
   .mega {
     position: absolute;
     width: var(--percent100);
@@ -86,7 +88,6 @@ header .cart-search {
     left: 0;
     right: 0;
     transform: translateY(-200%);
-
     background-color: rgb(24, 24, 24);
     transition: transform 0.4s;
   }
@@ -112,6 +113,13 @@ header .cart-search {
   /* cart-search mega */
   .cart-search .mega {
     padding: 1.5em 9em;
+    display: none;
+  }
+  .cart-search.search-active :nth-child(1) .mega {
+    display: block;
+  }
+  .cart-search.cart-active :nth-child(2) .mega {
+    display: block;
   }
   .search-box {
     width: 100%;
@@ -147,7 +155,6 @@ header .cart-search {
   input[type="search"]::-webkit-search-cancel-button:hover {
     background-color: rgb(189, 189, 189);
   }
-
   .cart-search .row h4 {
     font-size: 12px;
     display: flex;
