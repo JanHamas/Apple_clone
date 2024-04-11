@@ -10,7 +10,11 @@
   <body>
     <header>
       <div class="wrapper flexitems">
-        <div class="logo icon-small"><i class="ri-apple-fill"></i></div>
+        <div class="mobile-header"></div>
+        <div class="icon-small">
+          <span class="logo icon-small"><i class="ri-apple-fill"></i></span>
+          <span class="mega-back-icon mobile-hide desktop-hide">h</i></span>
+        </div>
         <nav class="mobile-hide">
           <div class="navbar flexitems">
             <li><a href="#">Store</a>
@@ -343,12 +347,14 @@
           </div>
         </nav>
         <div class="cart-search flexitems">
-          <li class="cart icon-small">
-            <i class="ri-search-line">
+          <li>
+            <span class="icon-small"><i class="ri-search-line"></i>
+            </span>
               <div class="mega">           
                     <div class="row">
                       <div class="search-box">
-                        <i class="ri-search-line"></i><input type="search"  placeholder="Search apple.com">
+                        <i class="ri-search-line"></i><span class="mobile-hide"><input type="search"  placeholder="Search apple.com"></span>
+                        <span class="desktop-hide"><input type="search"  placeholder="Search"></span>
                       </div>
                       <label class="mini-text">Quick Links</label>
                       <h4><i class="ri-arrow-right-fill"></i>Find a Store</h4>
@@ -357,11 +363,10 @@
                       <h4><i class="ri-arrow-right-fill"></i>AirTag</h4>
                       <h4><i class="ri-arrow-right-fill"></i>Apple Trade In</h4>
                     </div>              
-               </div>
-            </i>
+               </div>           
           </li>
-          <li class="search icon-small"> 
-            <i class="ri-shopping-bag-line"></i>
+          <li> 
+            <span class="icon-small"><i class="ri-shopping-bag-line"></i></span>
             <div class="mega">           
               <div class="row">
                 <h3>Your bag is empty</h3>
@@ -374,8 +379,9 @@
               </div>              
            </div>
           </li>
-          <li class="menu desktop-hide icon-small">
-            <i class="ri-menu-line"></i>
+          <li class="desktop-hide">
+            <span class="icon-small  icon-menu"><i class="ri-menu-line"></i></span>
+            <span class="icon-small mobile-hide icon-close">CLO</i></span>
           </li>
       </div>
     </header>

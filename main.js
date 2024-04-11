@@ -10,8 +10,9 @@ cartIcon.addEventListener("click", function () {
   cartSearch.classList.toggle("cart-active");
   cartSearch.classList.remove("search-active");
 });
-// Autoclose mega by hover and click outside mega
-
-
-
+// Autoclose mega by hover outside mega
+cartSearch.addEventListener("mouseleave", function () {
+  cartSearch.classList.remove("search-active");
+  cartSearch.classList.remove("cart-active");
+});
 
