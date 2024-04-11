@@ -89,7 +89,7 @@ header .cart-search {
 }
 /* cart-search mega */
 .cart-search .mega {
-  padding: 1.5em 2em;
+  padding: 5em 0 0 4em;
   height: 100vh;
 }
 .cart-search.search-active :nth-child(1) .mega {
@@ -172,16 +172,24 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 .mega-back-icon {
   position: relative;
   z-index: 1000;
-  color: red;
+}
+.icon-close i {
+  font-size: 1.5em;
 }
 /* mobile header  */
 .mobile-header {
   position: absolute;
-  height: 30px;
-  background: darkcyan;
-  top: 200px;
-  left: 10px;
+  width: 100%;
+  height: 100vh;
+  background: rgb(157, 162, 162);
+  top: 0px;
+  left: 0px;
   z-index: 1000;
+  /* transform: scaleY(0); */
+  transition: trasform 0.3s;
+}
+.mobile-header.active-mobile-header {
+  transform: scaleY(1);
 }
 @media screen and (min-width: 835px) {
   .icon-small {
