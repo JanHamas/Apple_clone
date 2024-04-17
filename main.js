@@ -86,7 +86,7 @@ megaBackIcon.addEventListener("click", function () {
 });
 
 // Targeting the .mega element
-var mega = document.querySelectorAll(".mega");
+var mega = document.querySelectorAll(".mobile-header .mega");
 // Remove megabackicon on click on mega
 mega.addEventListener("click", function () {
   if (!megaBackIcon.classList.contains("mobile-hide")) {
