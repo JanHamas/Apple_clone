@@ -40,7 +40,7 @@
   font-size: 14px;
   font-weight: 400;
   color: white;
-  border: 2px solid white;
+  border: 2px solid rgb(62, 57, 164);
   background: none;
   border-radius: 20px;
   cursor: pointer;
@@ -51,15 +51,15 @@
   height: 40px;
   font-size: 14px;
   font-weight: 400;
-  color: black;
-  background: white;
+  color: white;
+  background: rgb(62, 57, 164);
   border-radius: 20px;
   border: none;
   cursor: pointer;
 }
 .buy-btn:hover {
-  color: black;
-  background: white;
+  color: white;
+  background: rgb(62, 57, 164);
   border: none;
 }
 body {
@@ -277,8 +277,14 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 /* products  */
 .products .item {
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 6px;
+  width: 100%;
+  height: 100%;
 }
+.products .item:not(:first-child) {
+  height: 550px;
+}
+
 .products .item .media {
   position: relative;
 }
@@ -290,8 +296,7 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   bottom: 8%;
   text-align: center;
 }
-
-.products :not(:nth-child(1)) .item .content {
+.products :not(:nth-child(1)) .content {
   top: 8%;
 }
 .products .item .content .Iname {
@@ -377,126 +382,126 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 24px;
+    gap: 23px;
   }
 }
 @media screen and (min-width: 850px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 25px;
+    gap: 24px;
   }
 }
 @media screen and (min-width: 860px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 26px;
+    gap: 25px;
   }
 }
 @media screen and (min-width: 870px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 27px;
+    gap: 26px;
   }
 }
 @media screen and (min-width: 880px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 28px;
+    gap: 27px;
   }
 }
 @media screen and (min-width: 890px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 29px;
+    gap: 28px;
   }
 }
 @media screen and (min-width: 900px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 30px;
+    gap: 29px;
   }
 }
 @media screen and (min-width: 910px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 31px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 920px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 32px;
+    gap: 31px;
   }
 }
 @media screen and (min-width: 930px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 33px;
+    gap: 32px;
   }
 }
 @media screen and (min-width: 940px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 34px;
+    gap: 33px;
   }
 }
 @media screen and (min-width: 950px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 35px;
+    gap: 33px;
   }
 }
 @media screen and (min-width: 960px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 36px;
+    gap: 34px;
   }
 }
 @media screen and (min-width: 970px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 37px;
+    gap: 35px;
   }
 }
 @media screen and (min-width: 980px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 38px;
+    gap: 36px;
   }
 }
 @media screen and (min-width: 990px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 39px;
+    gap: 37px;
   }
 }
 @media screen and (min-width: 1010px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 41px;
+    gap: 38px;
   }
 }
 @media screen and (min-width: 1030px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 42px;
+    gap: 39px;
   }
 }
 @media screen and (min-width: 1116px) {
