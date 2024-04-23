@@ -311,13 +311,11 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   font-size: 2em;
   font-weight: 600;
 }
-
 .products .item .content .title {
   color: wheat;
   font-size: 1.4em;
   line-height: 1.2;
 }
-
 .products .item .content .button {
   display: flex;
   justify-content: center;
@@ -326,10 +324,26 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   margin: 6px;
 }
 .products .color-black .content .Iname,
-.products .color-black .content .title,
-.products .color-black .content .buy-btn {
+.products .color-black .content .title {
   color: black;
 }
+.products .color-black .content .buy-btn,
+.two-products .item .content .buy-btn {
+  color:rgb(0, 113, 227);
+  background: none;
+  border: 2px solid rgb(0, 113, 227);
+}
+.products .color-black .content .buy-btn:hover,
+.two-products .item .content .buy-btn:hover {
+  color: white;
+  background:rgb(0, 113, 227);
+}
+.products .color-black .content .lmore-btn,
+.two-products .item .content .lmore-btn {
+  color: white;
+  background: rgb(0, 113, 227);
+}
+
 .two-products {
   display: flex;
   flex-wrap: wrap;
