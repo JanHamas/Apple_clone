@@ -327,19 +327,16 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 .products .color-black .content .title {
   color: black;
 }
-.products .color-black .content .buy-btn,
-.two-products .item .content .buy-btn {
-  color:rgb(0, 113, 227);
+.products .color-black .content .buy-btn {
+  color: rgb(0, 113, 227);
   background: none;
   border: 2px solid rgb(0, 113, 227);
 }
-.products .color-black .content .buy-btn:hover,
-.two-products .item .content .buy-btn:hover {
+.products .color-black .content .buy-btn:hover {
   color: white;
-  background:rgb(0, 113, 227);
+  background: rgb(0, 113, 227);
 }
-.products .color-black .content .lmore-btn,
-.two-products .item .content .lmore-btn {
+.products .color-black .content .lmore-btn {
   color: white;
   background: rgb(0, 113, 227);
 }
@@ -356,6 +353,26 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 .two-products .item img {
   width: 100%;
   height: 400px;
+}
+/* first slider */
+.first-slider {
+  margin-bottom: 2em;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #9e3a3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 800px;
+  height: 400px;
+  object-fit: cover;
 }
 
 @media screen and (min-width: 730px) {
