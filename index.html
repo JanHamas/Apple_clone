@@ -8,11 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
    <!-- Link Swiper's CSS -->
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-
-  
-  
-
-    
   </head>
   <body>
     <header>
@@ -535,63 +530,49 @@
     <div class="first-slider">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
-          <div class="swiper-slide">
-            <img src="img/iphone 15 pro.jpg" alt="" />
-          </div>
+            <div class="swiper-slide"><img src="slider img/274x593.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (1).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (2).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (3).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (4).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (5).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (6).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (7).jpg" alt=""></div>
+            <div class="swiper-slide"><img src="slider img/274x593 (8).jpg" alt=""></div>            
+            
         </div>
-        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>    
+        <!-- Add navigation buttons -->
         <div class="swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>   
+        <div class="swiper-button-next"></div>
+    </div>
     </div>
     </main>
    <script src="main.js"></script>
-    <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-   <!-- Initialize Swiper -->
-   <script>
-     var swiper = new Swiper(".mySwiper", {
-       spaceBetween: 30,
-       centeredSlides: true,
-       autoplay: {
-         delay: 44344435345,
-         disableOnInteraction: false,
-       },
-       pagination: {
-         el: ".swiper-pagination",
-         clickable: true,
-       },
-       navigation: {
-         nextEl: ".swiper-button-next",
-         prevEl: ".swiper-button-prev",
-       },
-     });
-   </script>
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            // Add autoplay
+            autoplay: {
+                delay: 3000, // 3 seconds delay
+                disableOnInteraction: false,
+            },
+            // Add navigation buttons
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+  
   </body>
    
 </html>
