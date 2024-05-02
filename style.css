@@ -399,10 +399,48 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   margin: 0 5px;
   cursor: pointer;
 }
-
 .pagination .bullet.active {
   background-color: black;
 }
+/* second infinite slider */
+.slider-container {
+    height: 200px;
+    margin: auto;
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    margin-bottom: 2em;
+  }
+  .slide-track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 40s linear infinite;
+  }
+  .slide-track:hover {
+    animation-play-state: paused;
+  }
+  .slide-track .slide {
+    width: 400px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    padding: 7px;
+  }
+  .slide-track .slide img {
+    width: 100%;
+  }
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 9));
+    }
+  }
+
+/* footer */
 footer {
   background: rgb(245, 245, 247);
   padding: 20px 40px;
@@ -446,6 +484,7 @@ footer .row {
   text-decoration: underline;
   cursor: pointer;
 }
+
 @media screen and (min-width: 420px) {
   footer .row {
     width: 50%;
