@@ -63,7 +63,7 @@
   border: none;
 }
 body {
-  font-size: 11.5px;
+  font-size: 11px;
   width: 100%;
   height: 100%;
 }
@@ -230,8 +230,8 @@ input[type="search"]::-webkit-search-cancel-button:hover {
   position: fixed;
   width: 100%;
   height: 100vh;
-  padding: 5em 4em;
-  line-height: 2;
+  padding: 5em 1em 0 2.5em;
+  line-height: 1.6;
   background-color: black;
   top: 0px;
   left: 0px;
@@ -263,11 +263,16 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 .mobile-header .has-child.expand .mega {
   transform: translateY(0%);
 }
-.mobile-header li a {
-  font-size: 2.3em;
+.mobile-header .has-child > a:first-child {
+  font-size: 2em;
   color: white;
   font-weight: 800;
 }
+.mobile-header li a {
+  color: white;
+  font-weight: 800;
+}
+
 .mobile-header li span {
   transition: transform 0.3s;
   transform: scale(0);
@@ -404,41 +409,41 @@ input[type="search"]::-webkit-search-cancel-button:hover {
 }
 /* second infinite slider */
 .slider-container {
-    height: 200px;
-    margin: auto;
-    position: relative;
-    width: 100%;
-    display: grid;
-    place-items: center;
-    overflow: hidden;
-    margin-bottom: 2em;
+  height: 134px;
+  margin: auto;
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  margin-bottom: 2em;
+}
+.slide-track {
+  display: flex;
+  width: calc(238px * 12);
+  animation: scroll 20s linear infinite;
+}
+.slide-track:hover {
+  animation-play-state: paused;
+}
+.slide-track .slide {
+  width: 238px;
+  height: 134px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+}
+.slide-track .slide img {
+  width: 100%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
   }
-  .slide-track {
-    display: flex;
-    width: calc(250px * 18);
-    animation: scroll 40s linear infinite;
+  100% {
+    transform: translateX(calc(-238px * 6));
   }
-  .slide-track:hover {
-    animation-play-state: paused;
-  }
-  .slide-track .slide {
-    width: 400px;
-    height: 250px;
-    display: flex;
-    align-items: center;
-    padding: 7px;
-  }
-  .slide-track .slide img {
-    width: 100%;
-  }
-  @keyframes scroll {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(calc(-250px * 9));
-    }
-  }
+}
 
 /* footer */
 footer {
@@ -571,8 +576,6 @@ footer .row {
   .cart-search.cart-active :nth-child(2) .mega {
     transform: translateY(0%);
   }
-
-  /* main page products */
 }
 
 /* Additional All Media Queries for Header Gap */
@@ -597,112 +600,112 @@ footer .row {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 25px;
+    gap: 21px;
   }
 }
 @media screen and (min-width: 870px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 26px;
+    gap: 22px;
   }
 }
 @media screen and (min-width: 880px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 27px;
+    gap: 23px;
   }
 }
 @media screen and (min-width: 890px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 28px;
+    gap: 24px;
   }
 }
 @media screen and (min-width: 900px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 29px;
+    gap: 25px;
   }
 }
 @media screen and (min-width: 910px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 30px;
+    gap: 26px;
   }
 }
 @media screen and (min-width: 920px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 31px;
+    gap: 27px;
   }
 }
 @media screen and (min-width: 930px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 32px;
+    gap: 28px;
   }
 }
 @media screen and (min-width: 940px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 33px;
+    gap: 29px;
   }
 }
 @media screen and (min-width: 950px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 33px;
+    gap: 30px;
   }
 }
 @media screen and (min-width: 960px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 34px;
+    gap: 31px;
   }
 }
 @media screen and (min-width: 970px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 35px;
+    gap: 32px;
   }
 }
 @media screen and (min-width: 980px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 36px;
+    gap: 33px;
   }
 }
 @media screen and (min-width: 990px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 37px;
+    gap: 34px;
   }
 }
 @media screen and (min-width: 1010px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 38px;
+    gap: 35px;
   }
 }
 @media screen and (min-width: 1030px) {
   header .wrapper,
   header .navbar,
   header .cart-search {
-    gap: 39px;
+    gap: 36px;
   }
   footer {
     padding: 40px 80px;
